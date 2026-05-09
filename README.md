@@ -1,22 +1,22 @@
 # 🏦 Meezan Banking System (ATM Simulator)
 
-Yeh ek C++ based console application hai jo ek real-life ATM machine ke basic functions ko simulate karti hai. Is project mein user PIN verification ke baad balance check, deposit, withdraw aur fund transfer jaise kaam asani se kar sakta hai.
+A C++ based console application that simulates the basic functions of a real-life ATM machine. In this project, users can easily perform operations such as balance checking, deposit, withdrawal, and fund transfer after PIN verification.
 
 ---
 
 # ✨ Features
 
-- **Multi-Account Support:** 3 different accounts (`11111`, `22222`, `33333`) ke liye alag data handling.
-- **Security:** Har account ke liye unique PIN code verification.
+- **Multi-Account Support:** Separate data handling for 3 different accounts (`11111`, `22222`, `33333`).
+- **Security:** Unique PIN code verification for each account.
 
 ## Banking Operations
 
-- 💰 **Check Balance:** Current available cash dekhna.
-- 📥 **Deposit:** Account mein paise jama karna.
-- 📤 **Withdraw:** Account se paise nikalna (balance check ke saath).
-- 💸 **Transfer:** Ek account se doosre account mein paise bhejna.
+- 💰 **Check Balance:** View the currently available balance.
+- 📥 **Deposit:** Add money to the account.
+- 📤 **Withdraw:** Withdraw money from the account with balance verification.
+- 💸 **Transfer:** Transfer money from one account to another.
 
-- **Receipt Generation:** Har transaction ke baad ek clean receipt display hoti hai.
+- **Receipt Generation:** A clean receipt is displayed after every transaction.
 
 ---
 
@@ -32,7 +32,7 @@ Yeh ek C++ based console application hai jo ek real-life ATM machine ke basic fu
 
 ## 1. Compile
 
-Aapke paas GCC compiler hona chahiye. Terminal mein ye command likhein:
+Make sure you have a GCC compiler installed. Open Terminal or Command Prompt and run:
 
 ```bash
 g++ main.cpp -o MeezanATM
@@ -46,9 +46,9 @@ g++ main.cpp -o MeezanATM
 
 ---
 
-# 🔐 Default Credentials (Testing)
+# 🔐 Default Credentials (For Testing)
 
-Aap in accounts ko testing ke liye use kar sakte hain:
+You can use the following accounts for testing purposes:
 
 | Account Number | PIN Code | Initial Balance |
 |----------------|----------|-----------------|
@@ -60,11 +60,12 @@ Aap in accounts ko testing ke liye use kar sakte hain:
 
 # 📂 Logic Flow
 
-1. **Login:** User apna Account Number aur PIN enter karta hai.
-2. **Verification:** System check karta hai ke credentials sahi hain ya nahi.
-3. **Menu:** Verification ke baad user ko 4 options milte hain:
+1. **Login:** The user enters the Account Number and PIN.
+2. **Verification:** The system checks whether the credentials are correct or not.
+3. **Menu:** After successful verification, the user gets 4 options:
    - Balance
    - Deposit
    - Withdraw
    - Transfer
-4. **Processing:** User ki choice ke mutabiq balance update hota hai aur receipt display hoti hai.
+
+4. **Processing:** According to the selected option, the balance is updated and a receipt is displayed.
